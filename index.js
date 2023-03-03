@@ -73,7 +73,7 @@ app.post('/post', (req, res) =>{
 
 })
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6000;
 
 
 mongoose.connect(process.env.CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true})
