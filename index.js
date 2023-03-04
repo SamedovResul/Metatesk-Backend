@@ -22,6 +22,7 @@ app.use('/payment',stripe)
 
 app.get("/get", (req,res) =>{
   res.json("hello world")
+  console.log(req.body)
 })
 
 app.post('/post', (req, res) =>{
@@ -73,7 +74,7 @@ app.post('/post', (req, res) =>{
 
 })
 
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT || 8080;
 
 
 mongoose.connect(process.env.CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true})
